@@ -10,7 +10,11 @@ as part of the sprintfa() function:
 
     #include "sprintfa.h"
 
-    char sprintfa(x, "Hello World\n");
-    printf("%s\n", x);
+    int main(void) {
+        char sprintfa(x, "Hello World\n");
+        puts(x);
+
+        return 0;
+    }
 
 Special thanks to [Sam](https://blog.sam.liddicott.com/2015/07/marriage-of-alloca-and-asprintf.html) for the details.
